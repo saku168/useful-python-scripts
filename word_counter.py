@@ -1,5 +1,4 @@
 """Count words, characters and lines in text entered by the user."""
-
 def main():
     print("Paste text below. Submit an empty line to finish:")
     lines = []
@@ -11,7 +10,6 @@ def main():
         if not line:
             break
         lines.append(line)
-
     text = "\n".join(lines)
     print("\n--- Text statistics ---")
     print(f"Words: {len(text.split())}")
